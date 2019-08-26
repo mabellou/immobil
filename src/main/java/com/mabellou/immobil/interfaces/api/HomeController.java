@@ -11,11 +11,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 
 @RestController
-public class RootController {
+public class HomeController {
 
     private HomeService homeService;
 
-    public RootController(HomeService homeService) {
+    public HomeController(HomeService homeService) {
         this.homeService = homeService;
     }
 

@@ -1,8 +1,9 @@
+
 spring:
   datasource:
     username: sa
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:~/immobildb;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:devDb2;
   jpa:
     properties:
       hibernate:
@@ -13,6 +14,6 @@ spring:
     path: /h2-console
   flyway:
     locations: classpath:db/migration
-  output:
-    ansi:
-      enabled: ALWAYS
+
+server:
+  port: 9999
